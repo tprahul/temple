@@ -66,3 +66,11 @@ Additionally, make sure that the following extensions are enabled in your PHP:
 - json (enabled by default - don't turn it off)
 - [mysqlnd](http://php.net/manual/en/mysqlnd.install.php) if you plan to use MySQL
 - [libcurl](http://php.net/manual/en/curl.requirements.php) if you plan to use the HTTP\CURLRequest library
+**
+  API List**
+  **http://localhost:8080/api/temples**
+
+  [{"id":"1","name":"Sree Krishna Temple","location":"Guruvayoor","district":"Thrissur"},{"id":"2","name":"Sabarimala Ayyappa Temple","location":"Sabarimala","district":"Pathanamthitta"},{"id":"3","name":"Chottanikkara Devi Temple","location":"Chottanikkara","district":"Ernakulam"},{"id":"4","name":"Attukal Bhagavathy Temple","location":"Thiruvananthapuram","district":"Thiruvananthapuram"},{"id":"5","name":"Vaikom Mahadeva Temple","location":"Vaikom","district":"Kottayam"},{"id":"6","name":"Mannarasala Nagaraja Temple","location":"Haripad","district":"Alappuzha"},{"id":"7","name":"Thirunelli Temple","location":"Wayanad","district":"Wayanad"},{"id":"8","name":"Lokanarkavu Temple","location":"Vadakara","district":"Kozhikode"},{"id":"9","name":"Parassinikkadavu Muthappan Temple","location":"Kannur","district":"Kannur"},{"id":"10","name":"Kaviyoor Mahadeva Temple","location":"Kaviyoor","district":"Pathanamthitta"}]
+
+  **http://localhost:8080/api/temples/1**
+  {"temple":{"id":"1","name":"Sree Krishna Temple","location":"Guruvayoor","district":"Thrissur"},"poojas":[{"id":"1","temple_id":"1","name":"Usha Pooja","price":"150"},{"id":"2","temple_id":"1","name":"Noon Pooja","price":"200"},{"id":"3","temple_id":"1","name":"Athazha Pooja","price":"250"}]}
